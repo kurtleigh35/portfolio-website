@@ -23,67 +23,97 @@
          NAVIGATION
     ========================== -->
 
-    <nav class="navbar">
+    <header class="header">
 
-        <a href="#home" class="nav-logo">
-            KM<span>.</span>
-        </a>
+        <nav class="navbar">
 
-        <div class="nav-menu" id="nav-menu">
+            <a href="#home" class="logo">
+                KM<span>.</span>
+            </a>
 
-            <ul>
-                <li>
-                    <a href="#about" class="nav-link">About</a>
-                </li>
+            <div class="nav-panel" id="nav-panel">
 
-                <li>
-                    <a href="#skills" class="nav-link">Skills</a>
-                </li>
+                <ul class="nav-links">
 
-                <li>
-                    <a href="#projects" class="nav-link">Projects</a>
-                </li>
+                    <li>
+                        <a href="#about" class="nav-link">
+                            About
+                        </a>
+                    </li>
 
-                <li>
-                    <a href="#experience" class="nav-link">Experience</a>
-                </li>
+                    <li>
+                        <a href="#skills" class="nav-link">
+                            Skills
+                        </a>
+                    </li>
 
-                <li>
-                    <a href="#education" class="nav-link">Education</a>
-                </li>
+                    <li>
+                        <a href="#projects" class="nav-link">
+                            Projects
+                        </a>
+                    </li>
 
-                <li>
-                    <a href="#resume" class="nav-link">CV</a>
-                </li>
+                    <li>
+                        <a href="#experience" class="nav-link">
+                            Experience
+                        </a>
+                    </li>
 
-                <li>
-                    <a href="#contact" class="nav-link">Contact</a>
-                </li>
-            </ul>
+                    <li>
+                        <a href="#education" class="nav-link">
+                            Education
+                        </a>
+                    </li>
 
-            <button id="theme-btn" class="theme-btn">
-                <span id="theme-icon">🌙</span>
-                <span id="theme-text">Dark Mode</span>
+                    <li>
+                        <a href="#resume" class="nav-link">
+                            CV
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#contact" class="nav-link">
+                            Contact
+                        </a>
+                    </li>
+
+                </ul>
+
+
+                <button class="theme-button" id="theme-button">
+
+                    <span id="theme-icon">
+                        🌙
+                    </span>
+
+                    <span id="theme-text">
+                        Dark
+                    </span>
+
+                </button>
+
+            </div>
+
+
+            <!-- MOBILE HAMBURGER -->
+
+            <button class="hamburger"
+                    id="hamburger"
+                    aria-label="Open navigation menu">
+
+                <span></span>
+                <span></span>
+                <span></span>
+
             </button>
 
-        </div>
+        </nav>
 
-        <!-- MOBILE MENU BUTTON -->
-
-        <button class="menu-toggle"
-                id="menu-toggle"
-                aria-label="Open navigation menu">
-
-            <span></span>
-            <span></span>
-            <span></span>
-
-        </button>
-
-    </nav>
+    </header>
 
 
     <main>
+
 
         <!-- =========================
              HERO
@@ -91,75 +121,91 @@
 
         <section class="hero" id="home">
 
-            <div class="hero-content">
-
-                <p class="hero-label">
-                    INFORMATION TECHNOLOGY STUDENT
-                </p>
-
-                <h1>
-                    Hi, I'm
-                    <span>Kurtleigh Martin</span>
-                </h1>
-
-                <h2>
-                    Aspiring Software Developer & IT Professional
-                </h2>
-
-                <p class="hero-description">
-                    Information Technology student with practical experience
-                    in software development, database systems, web technologies
-                    and networking. I enjoy building practical technology
-                    solutions and continuously expanding my technical knowledge.
-                </p>
+            <div class="hero-container">
 
 
-                <div class="hero-buttons">
+                <div class="hero-content">
 
-                    <a href="#projects" class="btn primary-btn">
-                        View My Projects
-                    </a>
+                    <p class="eyebrow">
+                        INFORMATION TECHNOLOGY STUDENT
+                    </p>
 
-                    <a href="cv.pdf"
-                       class="btn secondary-btn"
-                       download>
-                        Download CV
-                    </a>
+
+                    <h1>
+                        Hi, I'm
+                        <span>Kurtleigh Martin.</span>
+                    </h1>
+
+
+                    <h2>
+                        Aspiring Software Developer
+                        & IT Professional
+                    </h2>
+
+
+                    <p class="hero-description">
+                        Information Technology student with practical
+                        experience in software development, database
+                        systems, web technologies and networking.
+                        I enjoy building practical technology solutions
+                        and continuously expanding my technical knowledge.
+                    </p>
+
+
+                    <div class="hero-actions">
+
+                        <a href="#projects"
+                           class="button button-primary">
+
+                            View Projects
+
+                        </a>
+
+
+                        <a href="cv.pdf"
+                           class="button button-secondary"
+                           download>
+
+                            Download CV
+
+                        </a>
+
+                    </div>
+
+
+                    <div class="hero-socials">
+
+                        <a href="https://github.com/kurtleigh35"
+                           target="_blank"
+                           rel="noopener noreferrer">
+
+                            GitHub ↗
+
+                        </a>
+
+
+                        <a href="https://www.linkedin.com/in/kurtleigh-martin-7b35a0333"
+                           target="_blank"
+                           rel="noopener noreferrer">
+
+                            LinkedIn ↗
+
+                        </a>
+
+                    </div>
 
                 </div>
 
 
-                <div class="hero-socials">
 
-                    <a href="https://github.com/kurtleigh35"
-                       target="_blank"
-                       rel="noopener noreferrer">
+                <div class="hero-photo">
 
-                        GitHub ↗
+                    <div class="photo-frame">
 
-                    </a>
+                        <img src="Images/profile.png"
+                             alt="Kurtleigh Martin">
 
-
-                    <a href="https://www.linkedin.com/in/kurtleigh-martin-7b35a0333"
-                       target="_blank"
-                       rel="noopener noreferrer">
-
-                        LinkedIn ↗
-
-                    </a>
-
-                </div>
-
-            </div>
-
-
-            <div class="hero-image">
-
-                <div class="image-wrapper">
-
-                    <img src="Images/profile.png"
-                         alt="Kurtleigh Martin"
-                         class="profile-pic">
+                    </div>
 
                 </div>
 
@@ -173,110 +219,144 @@
              ABOUT
         ========================== -->
 
-        <section id="about" class="section fade-in">
+        <section class="section" id="about">
 
-            <div class="section-heading">
-
-                <p class="section-label">
-                    ABOUT ME
-                </p>
-
-                <h2>
-                    Building My Career in Technology
-                </h2>
-
-            </div>
+            <div class="container">
 
 
-            <div class="about-container">
+                <div class="section-heading">
 
-                <div class="about-text">
-
-                    <p>
-                        I am an Information Technology student with a strong
-                        interest in software development, databases, web
-                        applications and technology-driven problem solving.
+                    <p class="eyebrow">
+                        ABOUT ME
                     </p>
 
-                    <p>
-                        Through academic and personal projects, I have gained
-                        practical experience using technologies including C#,
-                        .NET MAUI, C++, Python, Java, SQL and Oracle.
-                    </p>
-
-                    <p>
-                        My projects have allowed me to apply programming,
-                        database design, user-interface development and system
-                        design concepts to practical applications.
-                    </p>
-
-                    <p>
-                        In addition to my technical background, my experience
-                        in accounting and administration has strengthened my
-                        communication, organisation, attention to detail and
-                        ability to work effectively in professional environments.
-                    </p>
-
-                    <p>
-                        I am currently interested in graduate programmes,
-                        internships and junior IT opportunities where I can
-                        contribute my existing skills while continuing to
-                        develop as an IT professional.
-                    </p>
+                    <h2>
+                        Building My Career
+                        in Technology
+                    </h2>
 
                 </div>
 
 
-                <div class="about-highlights">
 
-                    <div class="highlight-card">
+                <div class="about-grid">
 
-                        <span>C#</span>
 
-                        <h3>Development</h3>
+                    <div class="about-content">
 
                         <p>
-                            Application and software development
+                            I am an Information Technology student with
+                            a strong interest in software development,
+                            databases, web applications and
+                            technology-driven problem solving.
+                        </p>
+
+
+                        <p>
+                            Through academic and personal projects,
+                            I have gained practical experience using
+                            technologies including C#, .NET MAUI,
+                            C++, Python, Java, SQL and Oracle.
+                        </p>
+
+
+                        <p>
+                            My projects have allowed me to apply
+                            programming, database design, user-interface
+                            development and system design concepts to
+                            practical applications.
+                        </p>
+
+
+                        <p>
+                            In addition to my technical background,
+                            my professional experience in accounting
+                            and administration has strengthened my
+                            communication, organisation, attention
+                            to detail and ability to work effectively
+                            in professional environments.
+                        </p>
+
+
+                        <p>
+                            I am interested in graduate programmes,
+                            internships and junior IT opportunities
+                            where I can contribute my existing skills
+                            while continuing to develop professionally.
                         </p>
 
                     </div>
 
 
-                    <div class="highlight-card">
 
-                        <span>SQL</span>
-
-                        <h3>Databases</h3>
-
-                        <p>
-                            Database design and development
-                        </p>
-
-                    </div>
+                    <div class="quick-skills">
 
 
-                    <div class="highlight-card">
+                        <div class="quick-card">
 
-                        <span>WEB</span>
+                            <strong>C#</strong>
 
-                        <h3>Web</h3>
+                            <h3>
+                                Development
+                            </h3>
 
-                        <p>
-                            ASP.NET, HTML and CSS
-                        </p>
+                            <p>
+                                Software and application
+                                development
+                            </p>
 
-                    </div>
+                        </div>
 
 
-                    <div class="highlight-card">
 
-                        <span>GIT</span>
+                        <div class="quick-card">
 
-                        <h3>Version Control</h3>
+                            <strong>SQL</strong>
 
-                        <p>
-                            Git and GitHub collaboration
-                        </p>
+                            <h3>
+                                Databases
+                            </h3>
+
+                            <p>
+                                Database design and
+                                development
+                            </p>
+
+                        </div>
+
+
+
+                        <div class="quick-card">
+
+                            <strong>WEB</strong>
+
+                            <h3>
+                                Web
+                            </h3>
+
+                            <p>
+                                ASP.NET, HTML and CSS
+                            </p>
+
+                        </div>
+
+
+
+                        <div class="quick-card">
+
+                            <strong>GIT</strong>
+
+                            <h3>
+                                Version Control
+                            </h3>
+
+                            <p>
+                                Git and GitHub
+                                collaboration
+                            </p>
+
+                        </div>
+
 
                     </div>
 
@@ -292,184 +372,192 @@
              SKILLS
         ========================== -->
 
-        <section id="skills"
-                 class="section section-alt fade-in">
+        <section class="section alternate-section"
+                 id="skills">
 
-            <div class="section-heading">
-
-                <p class="section-label">
-                    TECHNICAL EXPERTISE
-                </p>
-
-                <h2>
-                    Skills & Technologies
-                </h2>
-
-                <p>
-                    Technologies and professional skills developed through
-                    academic projects, independent learning and work experience.
-                </p>
-
-            </div>
+            <div class="container">
 
 
-            <div class="skills-container">
+                <div class="section-heading">
 
+                    <p class="eyebrow">
+                        TECHNICAL EXPERTISE
+                    </p>
 
-                <!-- PROGRAMMING -->
+                    <h2>
+                        Skills & Technologies
+                    </h2>
 
-                <div class="skill-card">
-
-                    <div class="skill-icon">
-                        &lt;/&gt;
-                    </div>
-
-                    <h3>
-                        Programming
-                    </h3>
-
-                    <div class="skill-tags">
-
-                        <span>C#</span>
-                        <span>C++</span>
-                        <span>Python</span>
-                        <span>Java</span>
-                        <span>JavaScript</span>
-
-                    </div>
+                    <p>
+                        Technologies developed through academic
+                        projects, practical work and independent
+                        learning.
+                    </p>
 
                 </div>
 
 
 
-                <!-- WEB -->
-
-                <div class="skill-card">
-
-                    <div class="skill-icon">
-                        WEB
-                    </div>
-
-                    <h3>
-                        Web & Application Development
-                    </h3>
-
-                    <div class="skill-tags">
-
-                        <span>ASP.NET</span>
-                        <span>ASP.NET Web Forms</span>
-                        <span>.NET MAUI</span>
-                        <span>HTML5</span>
-                        <span>CSS3</span>
-
-                    </div>
-
-                </div>
+                <div class="skills-grid">
 
 
+                    <!-- PROGRAMMING -->
 
-                <!-- DATABASES -->
+                    <article class="skill-card">
 
-                <div class="skill-card">
+                        <div class="skill-icon">
+                            &lt;/&gt;
+                        </div>
 
-                    <div class="skill-icon">
-                        DB
-                    </div>
+                        <h3>
+                            Programming
+                        </h3>
 
-                    <h3>
-                        Databases
-                    </h3>
+                        <div class="tags">
 
-                    <div class="skill-tags">
+                            <span>C#</span>
+                            <span>C++</span>
+                            <span>Python</span>
+                            <span>Java</span>
+                            <span>JavaScript</span>
 
-                        <span>SQL</span>
-                        <span>T-SQL</span>
-                        <span>SQL Server</span>
-                        <span>Azure SQL</span>
-                        <span>Oracle</span>
-                        <span>Database Design</span>
+                        </div>
 
-                    </div>
-
-                </div>
+                    </article>
 
 
 
-                <!-- DEVELOPMENT TOOLS -->
+                    <!-- WEB -->
 
-                <div class="skill-card">
+                    <article class="skill-card">
 
-                    <div class="skill-icon">
-                        DEV
-                    </div>
+                        <div class="skill-icon">
+                            WEB
+                        </div>
 
-                    <h3>
-                        Development Tools
-                    </h3>
+                        <h3>
+                            Web & Application Development
+                        </h3>
 
-                    <div class="skill-tags">
+                        <div class="tags">
 
-                        <span>Visual Studio</span>
-                        <span>VS Code</span>
-                        <span>Git</span>
-                        <span>GitHub</span>
-                        <span>SSMS</span>
-                        <span>Code::Blocks</span>
+                            <span>ASP.NET</span>
+                            <span>ASP.NET Web Forms</span>
+                            <span>.NET MAUI</span>
+                            <span>HTML5</span>
+                            <span>CSS3</span>
 
-                    </div>
+                        </div>
 
-                </div>
-
-
-
-                <!-- NETWORKING -->
-
-                <div class="skill-card">
-
-                    <div class="skill-icon">
-                        NET
-                    </div>
-
-                    <h3>
-                        Networking
-                    </h3>
-
-                    <div class="skill-tags">
-
-                        <span>Cisco Packet Tracer</span>
-                        <span>TCP/IP</span>
-                        <span>Subnetting</span>
-                        <span>IP Addressing</span>
-                        <span>VLANs</span>
-
-                    </div>
-
-                </div>
+                    </article>
 
 
 
-                <!-- PROFESSIONAL -->
+                    <!-- DATABASE -->
 
-                <div class="skill-card">
+                    <article class="skill-card">
 
-                    <div class="skill-icon">
-                        PRO
-                    </div>
+                        <div class="skill-icon">
+                            DB
+                        </div>
 
-                    <h3>
-                        Professional Skills
-                    </h3>
+                        <h3>
+                            Databases
+                        </h3>
 
-                    <div class="skill-tags">
+                        <div class="tags">
 
-                        <span>Problem Solving</span>
-                        <span>Communication</span>
-                        <span>Teamwork</span>
-                        <span>Adaptability</span>
-                        <span>Attention to Detail</span>
-                        <span>Time Management</span>
+                            <span>SQL</span>
+                            <span>T-SQL</span>
+                            <span>SQL Server</span>
+                            <span>Azure SQL</span>
+                            <span>Oracle</span>
+                            <span>Database Design</span>
 
-                    </div>
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- TOOLS -->
+
+                    <article class="skill-card">
+
+                        <div class="skill-icon">
+                            DEV
+                        </div>
+
+                        <h3>
+                            Development Tools
+                        </h3>
+
+                        <div class="tags">
+
+                            <span>Visual Studio</span>
+                            <span>VS Code</span>
+                            <span>Git</span>
+                            <span>GitHub</span>
+                            <span>SSMS</span>
+                            <span>Code::Blocks</span>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- NETWORKING -->
+
+                    <article class="skill-card">
+
+                        <div class="skill-icon">
+                            NET
+                        </div>
+
+                        <h3>
+                            Networking
+                        </h3>
+
+                        <div class="tags">
+
+                            <span>Cisco Packet Tracer</span>
+                            <span>TCP/IP</span>
+                            <span>IP Addressing</span>
+                            <span>Subnetting</span>
+                            <span>VLANs</span>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- PROFESSIONAL -->
+
+                    <article class="skill-card">
+
+                        <div class="skill-icon">
+                            PRO
+                        </div>
+
+                        <h3>
+                            Professional Skills
+                        </h3>
+
+                        <div class="tags">
+
+                            <span>Problem Solving</span>
+                            <span>Communication</span>
+                            <span>Teamwork</span>
+                            <span>Adaptability</span>
+                            <span>Attention to Detail</span>
+                            <span>Time Management</span>
+
+                        </div>
+
+                    </article>
+
 
                 </div>
 
@@ -483,247 +571,267 @@
              PROJECTS
         ========================== -->
 
-        <section id="projects"
-                 class="section fade-in">
+        <section class="section"
+                 id="projects">
 
-            <div class="section-heading">
-
-                <p class="section-label">
-                    MY WORK
-                </p>
-
-                <h2>
-                    Featured Projects
-                </h2>
-
-                <p>
-                    Projects demonstrating my software development,
-                    database and problem-solving skills.
-                </p>
-
-            </div>
+            <div class="container">
 
 
-            <div class="projects-grid">
+                <div class="section-heading">
 
-
-                <!-- ECO TOURISM -->
-
-                <article class="project-card">
-
-                    <div class="project-top">
-
-                        <span class="project-number">
-                            01
-                        </span>
-
-                        <span class="project-type">
-                            WEB APPLICATION
-                        </span>
-
-                    </div>
-
-
-                    <h3>
-                        Eco-Tourism Management System
-                    </h3>
-
-
-                    <p>
-                        Developed a database-driven web application designed
-                        to support the management of tours, destinations,
-                        tour guides, users and operational information.
+                    <p class="eyebrow">
+                        MY WORK
                     </p>
 
-                    <p>
-                        Implemented relational database structures, stored
-                        procedures, CRUD operations, validation and
-                        administrative interfaces.
-                    </p>
-
-
-                    <div class="tech-stack">
-
-                        <span>C#</span>
-                        <span>ASP.NET</span>
-                        <span>SQL</span>
-                        <span>Azure SQL</span>
-                        <span>GitHub</span>
-
-                    </div>
-
-
-                    <a href="https://github.com/kurtleigh35/EcoTourism"
-                       target="_blank"
-                       rel="noopener noreferrer"
-                       class="project-link">
-
-                        View GitHub Repository
-                        <span>→</span>
-
-                    </a>
-
-                </article>
-
-
-
-                <!-- MAUI -->
-
-                <article class="project-card">
-
-                    <div class="project-top">
-
-                        <span class="project-number">
-                            02
-                        </span>
-
-                        <span class="project-type">
-                            MOBILE APPLICATION
-                        </span>
-
-                    </div>
-
-
-                    <h3>
-                        Cross-Platform Mobile Application
-                    </h3>
-
+                    <h2>
+                        Featured Projects
+                    </h2>
 
                     <p>
-                        Engineered a cross-platform mobile application
-                        using C# and .NET MAUI as part of software
-                        development coursework.
+                        Projects demonstrating my software
+                        development, database and
+                        problem-solving skills.
                     </p>
 
-                    <p>
-                        Applied interface design, application architecture
-                        and event-driven programming principles.
-                    </p>
-
-
-                    <div class="tech-stack">
-
-                        <span>C#</span>
-                        <span>.NET MAUI</span>
-                        <span>Mobile Development</span>
-
-                    </div>
-
-
-                    <a href="https://github.com/kurtleigh35/MAUI-Application"
-                       target="_blank"
-                       rel="noopener noreferrer"
-                       class="project-link">
-
-                        View GitHub Repository
-                        <span>→</span>
-
-                    </a>
-
-                </article>
+                </div>
 
 
 
-                <!-- LIBRARY -->
-
-                <article class="project-card">
-
-                    <div class="project-top">
-
-                        <span class="project-number">
-                            03
-                        </span>
-
-                        <span class="project-type">
-                            SOFTWARE DEVELOPMENT
-                        </span>
-
-                    </div>
+                <div class="projects-grid">
 
 
-                    <h3>
-                        Library Management System
-                    </h3>
+                    <!-- ECO TOURISM -->
+
+                    <article class="project-card">
 
 
-                    <p>
-                        Developed a library management system for an
-                        academic project with functionality for managing
-                        library resources, users and borrowing activities.
-                    </p>
+                        <div class="project-header">
 
-                    <p>
-                        Applied object-oriented programming, structured
-                        data management and application logic.
-                    </p>
+                            <span class="project-number">
+                                01
+                            </span>
 
+                            <span class="project-category">
+                                WEB APPLICATION
+                            </span>
 
-                    <div class="tech-stack">
-
-                        <span>C#</span>
-                        <span>OOP</span>
-                        <span>Database Design</span>
-
-                    </div>
+                        </div>
 
 
-                    <a href="https://github.com/brakpan-15/brakpanLibSystem"
-                       target="_blank"
-                       rel="noopener noreferrer"
-                       class="project-link">
-
-                        View GitHub Repository
-                        <span>→</span>
-
-                    </a>
-
-                </article>
+                        <h3>
+                            Eco-Tourism Management System
+                        </h3>
 
 
-
-                <!-- FITNESS -->
-
-                <article class="project-card">
-
-                    <div class="project-top">
-
-                        <span class="project-number">
-                            04
-                        </span>
-
-                        <span class="project-type">
-                            C++ APPLICATION
-                        </span>
-
-                    </div>
+                        <p>
+                            Developed a database-driven web application
+                            designed to support the management of tours,
+                            destinations, tour guides, users and
+                            operational information.
+                        </p>
 
 
-                    <h3>
-                        Fitness Tracking Application
-                    </h3>
+                        <p>
+                            Implemented relational database structures,
+                            SQL stored procedures, CRUD functionality,
+                            data validation and administrative
+                            interfaces.
+                        </p>
 
 
-                    <p>
-                        Developed a performance-oriented fitness tracking
-                        application as part of academic programming
-                        coursework.
-                    </p>
+                        <div class="tags project-tags">
 
-                    <p>
-                        Applied programming fundamentals, application logic,
-                        data handling and problem-solving techniques.
-                    </p>
+                            <span>C#</span>
+                            <span>ASP.NET</span>
+                            <span>SQL</span>
+                            <span>Azure SQL</span>
+                            <span>GitHub</span>
+
+                        </div>
 
 
-                    <div class="tech-stack">
+                        <a href="https://github.com/kurtleigh35/EcoTourism"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="project-link">
 
-                        <span>C++</span>
-                        <span>Application Development</span>
-                        <span>Problem Solving</span>
+                            View GitHub Repository →
 
-                    </div>
+                        </a>
 
-                </article>
+                    </article>
+
+
+
+                    <!-- MOBILE APP -->
+
+                    <article class="project-card">
+
+
+                        <div class="project-header">
+
+                            <span class="project-number">
+                                02
+                            </span>
+
+                            <span class="project-category">
+                                MOBILE APPLICATION
+                            </span>
+
+                        </div>
+
+
+                        <h3>
+                            Cross-Platform Mobile Application
+                        </h3>
+
+
+                        <p>
+                            Developed a cross-platform mobile
+                            application using C# and .NET MAUI as
+                            part of software development coursework.
+                        </p>
+
+
+                        <p>
+                            Applied interface design, application
+                            architecture and event-driven programming
+                            principles.
+                        </p>
+
+
+                        <div class="tags project-tags">
+
+                            <span>C#</span>
+                            <span>.NET MAUI</span>
+                            <span>Mobile Development</span>
+
+                        </div>
+
+
+                        <a href="https://github.com/kurtleigh35/MAUI-Application"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="project-link">
+
+                            View GitHub Repository →
+
+                        </a>
+
+                    </article>
+
+
+
+                    <!-- LIBRARY -->
+
+                    <article class="project-card">
+
+
+                        <div class="project-header">
+
+                            <span class="project-number">
+                                03
+                            </span>
+
+                            <span class="project-category">
+                                SOFTWARE DEVELOPMENT
+                            </span>
+
+                        </div>
+
+
+                        <h3>
+                            Library Management System
+                        </h3>
+
+
+                        <p>
+                            Developed a library management system
+                            for an academic project with functionality
+                            for managing library resources, users and
+                            borrowing activities.
+                        </p>
+
+
+                        <p>
+                            Applied object-oriented programming,
+                            structured data management and application
+                            logic.
+                        </p>
+
+
+                        <div class="tags project-tags">
+
+                            <span>C#</span>
+                            <span>OOP</span>
+                            <span>Database Design</span>
+
+                        </div>
+
+
+                        <a href="https://github.com/brakpan-15/brakpanLibSystem"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="project-link">
+
+                            View GitHub Repository →
+
+                        </a>
+
+                    </article>
+
+
+
+                    <!-- FITNESS -->
+
+                    <article class="project-card">
+
+
+                        <div class="project-header">
+
+                            <span class="project-number">
+                                04
+                            </span>
+
+                            <span class="project-category">
+                                C++ APPLICATION
+                            </span>
+
+                        </div>
+
+
+                        <h3>
+                            Fitness Tracking Application
+                        </h3>
+
+
+                        <p>
+                            Developed a fitness tracking application
+                            as part of academic programming coursework
+                            to monitor user activities and performance
+                            information.
+                        </p>
+
+
+                        <p>
+                            Applied programming fundamentals,
+                            application logic, data handling and
+                            problem-solving techniques.
+                        </p>
+
+
+                        <div class="tags project-tags">
+
+                            <span>C++</span>
+                            <span>Application Development</span>
+                            <span>Problem Solving</span>
+
+                        </div>
+
+                    </article>
+
+
+                </div>
 
             </div>
 
@@ -735,34 +843,41 @@
              EXPERIENCE
         ========================== -->
 
-        <section id="experience"
-                 class="section section-alt fade-in">
+        <section class="section alternate-section"
+                 id="experience">
 
-            <div class="section-heading">
-
-                <p class="section-label">
-                    EXPERIENCE
-                </p>
-
-                <h2>
-                    Professional Experience
-                </h2>
-
-            </div>
+            <div class="container">
 
 
-            <div class="experience-container">
+                <div class="section-heading">
 
-                <div class="experience-card">
+                    <p class="eyebrow">
+                        EXPERIENCE
+                    </p>
 
-                    <div class="experience-date">
-                        2025
+                    <h2>
+                        Professional Experience
+                    </h2>
+
+                </div>
+
+
+
+                <article class="experience-card">
+
+
+                    <div class="experience-year">
+
+                        <span>
+                            2025
+                        </span>
+
                     </div>
 
 
-                    <div class="experience-content">
+                    <div class="experience-details">
 
-                        <p class="experience-type">
+                        <p class="experience-label">
                             PROFESSIONAL EXPERIENCE
                         </p>
 
@@ -778,8 +893,9 @@
                         <ul>
 
                             <li>
-                                Managed high-volume email communication
-                                and donor correspondence.
+                                Managed email communication and
+                                donor correspondence in a
+                                professional environment.
                             </li>
 
                             <li>
@@ -794,22 +910,23 @@
                             </li>
 
                             <li>
-                                Maintained donor and programme information
-                                using digital databases and
-                                spreadsheet-based systems.
+                                Maintained donor and programme
+                                information using digital databases
+                                and spreadsheet-based systems.
                             </li>
 
                             <li>
-                                Developed strong organisational,
+                                Strengthened organisational,
                                 communication and attention-to-detail
-                                skills in a professional environment.
+                                skills through day-to-day
+                                administrative responsibilities.
                             </li>
 
                         </ul>
 
                     </div>
 
-                </div>
+                </article>
 
             </div>
 
@@ -821,72 +938,96 @@
              EDUCATION
         ========================== -->
 
-        <section id="education"
-                 class="section fade-in">
+        <section class="section"
+                 id="education">
 
-            <div class="section-heading">
-
-                <p class="section-label">
-                    EDUCATION
-                </p>
-
-                <h2>
-                    Academic Background
-                </h2>
-
-            </div>
+            <div class="container">
 
 
-            <div class="education-grid">
+                <div class="section-heading">
 
-
-                <div class="education-card">
-
-                    <span class="education-date">
-                        2024 – 2026
-                    </span>
-
-                    <p class="education-status">
-                        CURRENT
+                    <p class="eyebrow">
+                        EDUCATION
                     </p>
 
-                    <h3>
-                        BSc Information Technology
-                    </h3>
-
-                    <h4>
-                        North-West University
-                    </h4>
-
-                    <p>
-                        Studies covering software development, databases,
-                        systems analysis, networking and related
-                        Information Technology disciplines.
-                    </p>
+                    <h2>
+                        Academic Background
+                    </h2>
 
                 </div>
 
 
 
-                <div class="education-card">
+                <div class="education-grid">
 
-                    <span class="education-date">
-                        2022 – 2024
-                    </span>
 
-                    <h3>
-                        Bachelor of Education
-                    </h3>
+                    <article class="education-card">
 
-                    <h4>
-                        North-West University
-                    </h4>
 
-                    <p>
-                        Studies that contributed to the development of
-                        communication, presentation, organisation and
-                        interpersonal skills.
-                    </p>
+                        <div class="education-top">
+
+                            <span class="education-date">
+                                2024 – 2026
+                            </span>
+
+                            <span class="status-badge">
+                                CURRENT
+                            </span>
+
+                        </div>
+
+
+                        <h3>
+                            BSc Information Technology
+                        </h3>
+
+                        <h4>
+                            North-West University
+                        </h4>
+
+
+                        <p>
+                            Studies covering software development,
+                            databases, systems analysis, networking
+                            and related Information Technology
+                            disciplines.
+                        </p>
+
+
+                    </article>
+
+
+
+                    <article class="education-card">
+
+
+                        <div class="education-top">
+
+                            <span class="education-date">
+                                2022 – 2024
+                            </span>
+
+                        </div>
+
+
+                        <h3>
+                            Bachelor of Education
+                        </h3>
+
+                        <h4>
+                            North-West University
+                        </h4>
+
+
+                        <p>
+                            Studies that contributed to the development
+                            of communication, presentation, organisation
+                            and interpersonal skills.
+                        </p>
+
+
+                    </article>
+
 
                 </div>
 
@@ -897,21 +1038,24 @@
 
 
         <!-- =========================
-             CV / RESUME
+             CV
         ========================== -->
 
-        <section id="resume"
-                 class="resume-section fade-in">
+        <section class="resume-section"
+                 id="resume">
 
-            <div class="resume-content">
+            <div class="resume-container">
 
-                <p class="section-label">
+
+                <p class="resume-label">
                     MY CV
                 </p>
 
+
                 <h2>
-                    Interested in Working Together?
+                    Want to Know More?
                 </h2>
+
 
                 <p>
                     Download my CV for a detailed overview of my
@@ -921,12 +1065,13 @@
 
 
                 <a href="cv.pdf"
-                   class="btn resume-btn"
+                   class="resume-button"
                    download>
 
                     Download My CV
 
                 </a>
+
 
             </div>
 
@@ -938,105 +1083,120 @@
              CONTACT
         ========================== -->
 
-        <section id="contact"
-                 class="section fade-in">
+        <section class="section"
+                 id="contact">
 
-            <div class="section-heading">
-
-                <p class="section-label">
-                    GET IN TOUCH
-                </p>
-
-                <h2>
-                    Let's Connect
-                </h2>
-
-                <p>
-                    I am open to IT graduate programmes, internships,
-                    junior technology roles and opportunities to gain
-                    practical industry experience.
-                </p>
-
-            </div>
+            <div class="container">
 
 
-            <div class="contact-container">
+                <div class="section-heading">
 
+                    <p class="eyebrow">
+                        GET IN TOUCH
+                    </p>
 
-                <a href="mailto:kurtleighm@gmail.com"
-                   class="contact-card">
+                    <h2>
+                        Let's Connect
+                    </h2>
 
-                    <div class="contact-icon">
-                        @
-                    </div>
+                    <p>
+                        I am open to IT graduate programmes,
+                        internships, junior technology roles and
+                        opportunities to gain practical industry
+                        experience.
+                    </p>
 
-                    <div>
-
-                        <small>
-                            EMAIL
-                        </small>
-
-                        <strong>
-                            kurtleighm@gmail.com
-                        </strong>
-
-                    </div>
-
-                </a>
+                </div>
 
 
 
-                <a href="https://github.com/kurtleigh35"
-                   target="_blank"
-                   rel="noopener noreferrer"
-                   class="contact-card">
-
-                    <div class="contact-icon">
-                        &lt;/&gt;
-                    </div>
-
-                    <div>
-
-                        <small>
-                            GITHUB
-                        </small>
-
-                        <strong>
-                            github.com/kurtleigh35
-                        </strong>
-
-                    </div>
-
-                </a>
+                <div class="contact-grid">
 
 
+                    <!-- EMAIL -->
 
-                <a href="https://www.linkedin.com/in/kurtleigh-martin-7b35a0333"
-                   target="_blank"
-                   rel="noopener noreferrer"
-                   class="contact-card">
+                    <a href="mailto:kurtleighm@gmail.com"
+                       class="contact-card">
 
-                    <div class="contact-icon">
-                        in
-                    </div>
+                        <div class="contact-icon">
+                            @
+                        </div>
 
-                    <div>
+                        <div class="contact-info">
 
-                        <small>
-                            LINKEDIN
-                        </small>
+                            <small>
+                                EMAIL
+                            </small>
 
-                        <strong>
-                            Kurtleigh Martin
-                        </strong>
+                            <strong>
+                                kurtleighm@gmail.com
+                            </strong>
 
-                    </div>
+                        </div>
 
-                </a>
+                    </a>
+
+
+
+                    <!-- GITHUB -->
+
+                    <a href="https://github.com/kurtleigh35"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="contact-card">
+
+                        <div class="contact-icon">
+                            &lt;/&gt;
+                        </div>
+
+                        <div class="contact-info">
+
+                            <small>
+                                GITHUB
+                            </small>
+
+                            <strong>
+                                github.com/kurtleigh35
+                            </strong>
+
+                        </div>
+
+                    </a>
+
+
+
+                    <!-- LINKEDIN -->
+
+                    <a href="https://www.linkedin.com/in/kurtleigh-martin-7b35a0333"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="contact-card">
+
+                        <div class="contact-icon">
+                            in
+                        </div>
+
+                        <div class="contact-info">
+
+                            <small>
+                                LINKEDIN
+                            </small>
+
+                            <strong>
+                                Kurtleigh Martin
+                            </strong>
+
+                        </div>
+
+                    </a>
+
+
+                </div>
 
             </div>
 
         </section>
+
 
     </main>
 
@@ -1046,9 +1206,9 @@
          FOOTER
     ========================== -->
 
-    <footer>
+    <footer class="footer">
 
-        <div class="footer-brand">
+        <div>
 
             <strong>
                 Kurtleigh Martin
@@ -1061,9 +1221,9 @@
         </div>
 
 
-        <p class="copyright">
-            © <span id="current-year"></span>
-            Kurtleigh Martin. All rights reserved.
+        <p>
+            © <span id="year"></span>
+            Kurtleigh Martin.
         </p>
 
     </footer>
