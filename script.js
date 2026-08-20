@@ -1,16 +1,16 @@
 document.addEventListener("DOMContentLoaded", function () {
 
-    const menuToggle =
-        document.getElementById("menu-toggle");
+    const hamburger =
+        document.getElementById("hamburger");
 
-    const navMenu =
-        document.getElementById("nav-menu");
+    const navPanel =
+        document.getElementById("nav-panel");
 
     const navLinks =
         document.querySelectorAll(".nav-link");
 
     const themeButton =
-        document.getElementById("theme-btn");
+        document.getElementById("theme-button");
 
     const themeIcon =
         document.getElementById("theme-icon");
@@ -18,17 +18,19 @@ document.addEventListener("DOMContentLoaded", function () {
     const themeText =
         document.getElementById("theme-text");
 
-    const currentYear =
-        document.getElementById("current-year");
+    const year =
+        document.getElementById("year");
 
 
     /* =========================
-       CURRENT YEAR
+       YEAR
     ========================== */
 
-    if (currentYear) {
-        currentYear.textContent =
+    if (year) {
+
+        year.textContent =
             new Date().getFullYear();
+
     }
 
 
@@ -36,31 +38,15 @@ document.addEventListener("DOMContentLoaded", function () {
        MOBILE MENU
     ========================== */
 
-    function closeMenu() {
-
-        menuToggle.classList.remove("active");
-
-        navMenu.classList.remove("active");
-
-        document.body.classList.remove("menu-open");
-
-        menuToggle.setAttribute(
-            "aria-label",
-            "Open navigation menu"
-        );
-
-    }
-
-
     function openMenu() {
 
-        menuToggle.classList.add("active");
+        hamburger.classList.add("active");
 
-        navMenu.classList.add("active");
+        navPanel.classList.add("open");
 
         document.body.classList.add("menu-open");
 
-        menuToggle.setAttribute(
+        hamburger.setAttribute(
             "aria-label",
             "Close navigation menu"
         );
@@ -68,25 +54,42 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
 
-    menuToggle.addEventListener(
+    function closeMenu() {
+
+        hamburger.classList.remove("active");
+
+        navPanel.classList.remove("open");
+
+        document.body.classList.remove("menu-open");
+
+        hamburger.setAttribute(
+            "aria-label",
+            "Open navigation menu"
+        );
+
+    }
+
+
+    hamburger.addEventListener(
         "click",
         function () {
 
-            const menuIsOpen =
-                navMenu.classList.contains("active");
+            if (
+                navPanel.classList.contains("open")
+            ) {
 
-            if (menuIsOpen) {
                 closeMenu();
+
             }
             else {
+
                 openMenu();
+
             }
 
         }
     );
 
-
-    /* CLOSE MENU WHEN LINK IS CLICKED */
 
     navLinks.forEach(function (link) {
 
@@ -102,28 +105,28 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 
-    /* CLOSE MENU WITH ESCAPE */
-
     document.addEventListener(
         "keydown",
         function (event) {
 
             if (event.key === "Escape") {
+
                 closeMenu();
+
             }
 
         }
     );
 
 
-    /* CLOSE MENU IF SCREEN BECOMES DESKTOP */
-
     window.addEventListener(
         "resize",
         function () {
 
-            if (window.innerWidth > 800) {
+            if (window.innerWidth > 780) {
+
                 closeMenu();
+
             }
 
         }
@@ -135,19 +138,18 @@ document.addEventListener("DOMContentLoaded", function () {
     ========================== */
 
     const savedTheme =
-        localStorage.getItem("portfolio-theme");
+        localStorage.getItem(
+            "portfolioTheme"
+        );
 
 
     if (savedTheme === "dark") {
 
-        document.body.classList.add(
-            "dark-mode"
-        );
+        document.body.classList.add("dark");
 
         themeIcon.textContent = "☀️";
 
-        themeText.textContent =
-            "Light Mode";
+        themeText.textContent = "Light";
 
     }
 
@@ -156,26 +158,23 @@ document.addEventListener("DOMContentLoaded", function () {
         "click",
         function () {
 
-            document.body.classList.toggle(
-                "dark-mode"
-            );
+            document.body.classList.toggle("dark");
 
 
-            const darkModeActive =
+            const isDark =
                 document.body.classList.contains(
-                    "dark-mode"
+                    "dark"
                 );
 
 
-            if (darkModeActive) {
+            if (isDark) {
 
                 themeIcon.textContent = "☀️";
 
-                themeText.textContent =
-                    "Light Mode";
+                themeText.textContent = "Light";
 
                 localStorage.setItem(
-                    "portfolio-theme",
+                    "portfolioTheme",
                     "dark"
                 );
 
@@ -184,11 +183,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
                 themeIcon.textContent = "🌙";
 
-                themeText.textContent =
-                    "Dark Mode";
+                themeText.textContent = "Dark";
 
                 localStorage.setItem(
-                    "portfolio-theme",
+                    "portfolioTheme",
                     "light"
                 );
 
@@ -199,60 +197,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
     /* =========================
-       SCROLL ANIMATION
-    ========================== */
-
-    const fadeElements =
-        document.querySelectorAll(
-            ".fade-in"
-        );
-
-
-    const observer =
-        new IntersectionObserver(
-
-            function (entries) {
-
-                entries.forEach(
-                    function (entry) {
-
-                        if (
-                            entry.isIntersecting
-                        ) {
-
-                            entry.target
-                                .classList
-                                .add("visible");
-
-                            observer.unobserve(
-                                entry.target
-                            );
-
-                        }
-
-                    }
-                );
-
-            },
-
-            {
-                threshold: 0.12
-            }
-
-        );
-
-
-    fadeElements.forEach(
-        function (element) {
-
-            observer.observe(element);
-
-        }
-    );
-
-
-    /* =========================
-       ACTIVE NAV LINK
+       ACTIVE NAVIGATION LINK
     ========================== */
 
     const sections =
@@ -261,33 +206,28 @@ document.addEventListener("DOMContentLoaded", function () {
         );
 
 
-    function updateActiveLink() {
+    function updateNavigation() {
 
         let currentSection = "";
+
 
         sections.forEach(
             function (section) {
 
-                const sectionTop =
-                    section.offsetTop - 150;
+                const top =
+                    section.offsetTop - 140;
 
-                const sectionHeight =
-                    section.offsetHeight;
+                const bottom =
+                    top + section.offsetHeight;
 
 
                 if (
-                    window.scrollY >=
-                    sectionTop
-                    &&
-                    window.scrollY <
-                    sectionTop +
-                    sectionHeight
+                    window.scrollY >= top &&
+                    window.scrollY < bottom
                 ) {
 
                     currentSection =
-                        section.getAttribute(
-                            "id"
-                        );
+                        section.id;
 
                 }
 
@@ -298,19 +238,19 @@ document.addEventListener("DOMContentLoaded", function () {
         navLinks.forEach(
             function (link) {
 
-                link.classList.remove(
-                    "active-link"
-                );
+                link.classList.remove("active");
+
+
+                const target =
+                    link.getAttribute("href");
 
 
                 if (
-                    link.getAttribute("href") ===
+                    target ===
                     "#" + currentSection
                 ) {
 
-                    link.classList.add(
-                        "active-link"
-                    );
+                    link.classList.add("active");
 
                 }
 
@@ -322,7 +262,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
     window.addEventListener(
         "scroll",
-        updateActiveLink
+        updateNavigation
     );
+
+
+    updateNavigation();
 
 });
